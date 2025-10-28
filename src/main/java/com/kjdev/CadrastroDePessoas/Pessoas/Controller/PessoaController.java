@@ -1,4 +1,4 @@
-package com.kjdev.CadrastroDePessoas;
+package com.kjdev.CadrastroDePessoas.Pessoas.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

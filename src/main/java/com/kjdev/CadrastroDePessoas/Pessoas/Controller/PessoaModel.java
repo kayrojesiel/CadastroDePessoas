@@ -1,6 +1,9 @@
-package com.kjdev.CadrastroDePessoas;
+package com.kjdev.CadrastroDePessoas.Pessoas.Controller;
 
+import com.kjdev.CadrastroDePessoas.Profissoes.ProfissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 //Entity transforma uma classe em uma entidade do BD
 @Entity
@@ -13,6 +16,7 @@ public class PessoaModel {
     private String nome;
     private int idade;
     private int cpf;
+    private List<ProfissoesModel> profissoes;
 
     public PessoaModel(){
 
