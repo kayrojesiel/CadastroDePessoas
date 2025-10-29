@@ -2,10 +2,17 @@ package com.kjdev.CadrastroDePessoas.Pessoas.Controller;
 
 import com.kjdev.CadrastroDePessoas.Profissoes.ProfissoesModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 //Entity transforma uma classe em uma entidade do BD
 @Entity
 @Table(name = "tb_cadastro")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class PessoaModel {
 
     @Id
@@ -20,38 +27,4 @@ public class PessoaModel {
     @JoinColumn(name = "profissoes_id")
     private ProfissoesModel profissoes;
 
-
-    public PessoaModel(){
-
-    }
-
-    public PessoaModel(String nome, int idade, int cpf) {
-        this.nome = nome;
-        this.idade = idade;
-        this.cpf = cpf;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
-    }
 }

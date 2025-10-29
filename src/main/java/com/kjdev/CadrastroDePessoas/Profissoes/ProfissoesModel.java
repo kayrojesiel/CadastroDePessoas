@@ -2,11 +2,18 @@ package com.kjdev.CadrastroDePessoas.Profissoes;
 
 import com.kjdev.CadrastroDePessoas.Pessoas.Controller.PessoaModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name = "tb_profissoes")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class ProfissoesModel {
 
     @Id
@@ -19,8 +26,5 @@ public class ProfissoesModel {
     //@OneToMany - uma profissão pode ter varias pessoas
     @OneToMany(mappedBy = "profissoes")
     private List<PessoaModel> pessoas;
-
-
-
 
 }
