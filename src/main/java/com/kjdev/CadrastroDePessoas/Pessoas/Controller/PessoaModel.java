@@ -18,8 +18,12 @@ public class PessoaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
+
     private int idade;
+
+    @Column(unique = true)
     private int cpf;
 
     //@ManyToOne - um pessoa tem uma unica profissão
