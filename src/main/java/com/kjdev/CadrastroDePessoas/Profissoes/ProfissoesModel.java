@@ -1,6 +1,6 @@
 package com.kjdev.CadrastroDePessoas.Profissoes;
 
-import com.kjdev.CadrastroDePessoas.Pessoas.Controller.PessoaModel;
+import com.kjdev.CadrastroDePessoas.Pessoas.PessoaModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.kjdev.CadrastroDePessoas.Pessoas.Controller;
+package com.kjdev.CadrastroDePessoas.Pessoas;
 
 import com.kjdev.CadrastroDePessoas.Profissoes.ProfissoesModel;
 import jakarta.persistence.*;
